@@ -12,6 +12,8 @@ class Sockets {
 
         this.io.on('connection', (socket) => { 
 
+            console.log('Cliente conectado');
+
             socket.on('mensaje-a-server', (data) => {
                 console.log(data);
         
